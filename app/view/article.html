@@ -1,0 +1,34 @@
+<block tpl-id="addArticle">
+
+    <div id="chatChannelMain">
+		<div id="toolbar">
+			<button class="btn-left" id="backToIndex4">返回</button>
+			<span></span>			
+		</div>
+		
+		<div id="channel">
+			<table>
+                <tr>
+                    <th><label for="article_title">标题</label></th>
+                    <td><input type="text" id="article_title" name="article_title"/></td>
+                </tr>
+                <tr>
+                    <th><label for="article_content">内容</label></th>
+                    <td>
+                    <textarea id="article_content" name="article_content" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="article_username">连接到</label></th>
+                    <td><input type="text" id="article_username" name="article_username" placeholder="这里填写用户名"/></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><button id="submit_article" >发布</button></td>
+                </tr>
+            </table>
+		</div>
+        
+	</div>
+ 
+ </block>

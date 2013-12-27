@@ -1,0 +1,25 @@
+<block tpl-id="lightAct">
+    <div id="chatChannelMain">
+		<div id="toolbar">
+            <button class="btn-left" id="backToIndex3">返回</button>
+			<span></span>
+            <button style="display: none;" class="btn-right" id="addArticle">添加</button>
+		</div>
+		
+		<div id="channel">
+            
+			<div class="article_show">
+                {{#each data}}
+                <div class="article_title" style="font-weight: bold;;">{{this.title}}</div>
+                <div class="article_time">{{$Library.getChatTime.getCTime(this.time)}}</div>
+                <div style="margin-top:10px;">
+                {{this.content}}
+                </div>
+                {{/each}}
+            </div>
+            
+            
+		</div>
+	</div>
+ 
+ </block>

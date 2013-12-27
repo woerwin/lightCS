@@ -1,0 +1,36 @@
+<block tpl-id="createChannel">
+	<div id="create_container">
+		<div id="toolbar">
+			<button id="backTochannel">返回</button>
+			<span>添加席位</span>
+			<!--button id="ok">确定</button-->						
+		</div>
+		
+		<div class="channel" id="messages" align="center">
+			<!--input placeholder="input channel name" id="inputChannelName" /-->
+            <table>
+                <tr>
+                    <th><label for="channel_title">坐席名称</label></th>
+                    <td><input type="text" id="channel_title" name="channel_title" placeholder="坐席名称"/></td>
+                </tr>
+                <tr>
+                    <th><label for="channel_title">坐席类型</label></th>
+                    <td>
+                    <input type="radio" value="0" checked="checked" name="channel_type" checked="true"/>单人
+                    <input type="radio" value="1" name="channel_type"/>多人
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="channel_describe">坐席说明</label></th>
+                    <td>
+                    <textarea id="channel_describe" name="channel_describe" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><button id="submit_channel" >保存</button></td>
+                </tr>
+            </table>
+		</div>
+	</div>
+</block>

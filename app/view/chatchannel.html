@@ -1,0 +1,29 @@
+<block tpl-id="chatChannel">
+
+	<div id="chatChannelMain">
+		<div id="toolbar">
+			<button id="back">返回</button>
+			<span>客服席位</span>
+			<button id="create">添加</button>						
+		</div>
+		
+		<div id="chatchannel_list_click" class="channel">
+			<ul>
+			{{#each data}}
+				<li>
+					<div class="channelName">
+						{{this.channelname}}
+                        <i>({{#if this.state}}<span style="color: red;">进行中</span>{{else}}<span style="color: blue;">空闲</span>{{/if}})</i>
+                        <span class="channelClose"  {{$Library.getUsername.getDelDisplay(this.username,this.state)}}  delName="{{this.channelname}}">删除</span>
+                        <span class="channelClose"  {{$Library.getUsername.getStateDisplay(this.username,this.state)}}  channelName="{{this.channelname}}">释放</span>
+						<button class="join" {{$Library.getUsername.getAccessDisplay(this.username,this.state,this.channeltype)}} channelName="{{this.channelname}}" channelType="{{this.channeltype}}" >进入</button>							
+					</div>	
+					<div class="createTime">{{$Library.getChatTime.getTime(this.time)}}</div>		
+				</li>
+				
+			{{/each}}
+			
+			</ul>
+		</div>
+	</div>
+</block>

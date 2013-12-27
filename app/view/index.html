@@ -1,0 +1,30 @@
+<block tpl-id="lightIndex">
+    <div id="chatChannelMain">
+		<div id="toolbar">
+            <button class="btn-left" id="chatchannel_bar">客服</button>
+			<button class="btn-left" id="login_bar">登录</button>
+			<span>首页</span>
+            <button class="btn-right" id="register_bar">注册</button>
+            <button class="btn-right" id="logout_bar">退出</button>					
+		</div>
+		
+		<div id="index_list_click" class="channel">
+			<ul>
+                
+                {{#each data}}
+                <li title="">
+					<div class="channelName">
+						{{this.title}}
+                        <button class="indexRemove" {{$Library.getUsername.getDisplay()}}  title="{{this.title}}" data-id="{{this.smr_id}}">删除</button>
+                        
+                        <span class="index_article" title="{{this.title}}" username="{{this.username}}" data-id="{{this.smr_id}}" >»</span>
+					</div>	
+					<div class="createTime">{{$Library.getChatTime.getCTime(this.time)}}</div>		
+				</li>
+			    {{/each}}
+                 
+			</ul>
+		</div>
+	</div>
+ 
+ </block>
