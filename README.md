@@ -11,7 +11,7 @@ lightCS（轻客服）
 
     安装nodejs、mongodb（BAE3对应nodejs环境，数据库配置app/server_config/database.js,bae.js）
     
-    非IE浏览器！！！
+    非IE浏览器，推荐Chrome！！！
 
 ###安装、使用
 
