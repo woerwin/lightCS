@@ -1,7 +1,7 @@
 lightCS（轻客服）
 =======
     
-    lightCS(light Customer Service System),轻型跨平台在线客服系统...
+    ![lightCS](http://lightcs.duapp.com/favicon.ico) lightCS(light Customer Service System),轻型跨平台在线客服系统...
 
 ###基于
 
