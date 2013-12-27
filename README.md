@@ -5,7 +5,7 @@ lightCS（轻客服）
 
 ###基于
 
-    [NodeJs](http://nodejs.org) + [sumeru/clouda](https://github.com/brandnewera/clouda)  ( + [BAE3](http://developer.baidu.com))
+[NodeJs](http://nodejs.org) + [sumeru/clouda](https://github.com/brandnewera/clouda)  ( + [BAE3](http://developer.baidu.com))
 
 ###环境需求
 
