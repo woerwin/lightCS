@@ -1,8 +1,5 @@
 lightCS（轻客服）
 =======
-
-
-    [![Build Status](https://travis-ci.org/segmentio/myth.png)](http://travis-ci.org/segmentio/myth)
     
     lightCS(light Customer Service System),轻型跨平台在线客服系统...
 
