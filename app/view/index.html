@@ -13,7 +13,7 @@
                 
                 {{#each data}}
                 <li title="">
-                    <div class="channel_img" style="float: left;"><img title="{{this.title}}" username="{{this.username}}" src="{{#if this.pic}}{{this.pic}}{{else}}/assets/pic/logo.jpg{{/if}}" width="72" height="72" /></div>
+                    <div class="channel_img" style="float: left;"><img title="{{this.title}}" username="{{this.username}}" src="{{#if this.pic}}{{this.pic}}{{else}}/assets/pic/logo.jpg{{/if}}" width="66" height="66" /></div>
 					<div class="channel_title" title="{{this.title}}" username="{{this.username}}">
 						{{this.title}}
                         <button class="indexRemove" {{$Library.getUsername.getDisplay()}}  title="{{this.title}}" data-id="{{this.smr_id}}">删除</button>

@@ -117,6 +117,10 @@ margin-top: 0px;margin-right: 5px;text-align: center;color: #999999;}
     margin-left: 10px;
     border: 0px;
 }
+.channel_img img{
+    border-radius:3px;
+    margin:3px 0px;
+}
 .channel_title {
     margin-left: 85px;
     margin-top: 6px;
