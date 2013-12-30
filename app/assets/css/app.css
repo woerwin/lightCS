@@ -118,20 +118,20 @@ margin-top: 0px;margin-right: 5px;text-align: center;color: #999999;}
     border: 0px;
 }
 .channel_title {
-    margin-left: 82px;
+    margin-left: 85px;
     margin-top: 6px;
     font-size: 18px;
     font-weight: bold;
 }
 .channel_desc{
-    margin-left: 82px;
+    margin-left: 85px;
     font-size:14px;
     margin-top:3px;
 }
 .channel_time {
     color: #ADACAC;
     font-size: 10px;
-    margin-left: 82px;
+    margin-left: 85px;
     margin-top: 3px;
 }
 .button{

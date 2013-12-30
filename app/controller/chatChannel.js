@@ -17,8 +17,12 @@ sumeru.router.add(
 App.chatchannel = sumeru.controller.create(function(env,session){	
 	var username = window.localStorage.getItem('currentUserName');
     var isadmin = 0;
+    var title = username;
     if(username){
         isadmin = 1;
+    }
+    if(session.get('u')){
+        title = session.get('u');
     }
     if(!username){
         username = session.get('u');
@@ -28,7 +32,7 @@ App.chatchannel = sumeru.controller.create(function(env,session){
         }
     }
     var getMsgs = function(){
-		session.messages = env.subscribe('pub-chatchannel',username, function(msgCollection){
+		session.messages = env.subscribe('pub-chatchannel',title, function(msgCollection){
           	session.bind('chatChannel', {
               	data    :   msgCollection.find(),
           	});              
