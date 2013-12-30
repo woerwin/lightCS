@@ -64,7 +64,7 @@ App.chatchannel = sumeru.controller.create(function(env,session){
 		             {
 		             	window.localStorage.setItem("currentChannelName",channelName);			             	
 		             }
-                     if(channelType == '0' && !isadmin){
+                     if(channelType == '0' && target.getAttribute('username') != window.localStorage.getItem('currentUserName') ){
                         session.messages.update({'state':1},{'channelname':channelName});
                         session.messages.save();
                         session.messages.releaseHold();

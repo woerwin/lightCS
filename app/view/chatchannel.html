@@ -16,7 +16,7 @@
                         <i>({{#if this.state}}<span style="color: red;">进行中</span>{{else}}<span style="color: blue;">空闲</span>{{/if}})</i>
                         <span class="channelClose"  {{$Library.getUsername.getDelDisplay(this.username,this.state)}}  delName="{{this.channelname}}">删除</span>
                         <span class="channelClose"  {{$Library.getUsername.getStateDisplay(this.username,this.state)}}  channelName="{{this.channelname}}">释放</span>
-						<button class="join" {{$Library.getUsername.getAccessDisplay(this.username,this.state,this.channeltype)}} channelName="{{this.channelname}}" channelType="{{this.channeltype}}" >进入</button>							
+						<button class="join" {{$Library.getUsername.getAccessDisplay(this.username,this.state,this.channeltype)}} channelName="{{this.channelname}}" channelType="{{this.channeltype}}" username="{{this.username}}" >进入</button>							
 					</div>	
 					<div class="createTime">{{$Library.getChatTime.getTime(this.time)}}</div>		
 				</li>
