@@ -7,10 +7,24 @@
 		</div>
 		
 		<div id="channel">
+            <form id="upload_form" enctype="multipart/form-data" method="post">
 			<table>
                 <tr>
                     <th><label for="article_title">标题</label></th>
                     <td><input type="text" id="article_title" name="article_title"/></td>
+                </tr>
+                <tr>
+                    <th><label for="article_pic">Logo</label></th>
+                    <td>
+                    <input type="hidden" name ="article_pic" id ="article_pic" value="" />
+                    <img id="preview" width="72" height="72" />
+                    <input type="file" name="myfile1" id="myfile1" />
+                    <input type="button" id="startupload" value="上传" class="button" />
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="article_desc">概要</label></th>
+                    <td><input type="text" id="article_desc" name="article_desc"/></td>
                 </tr>
                 <tr>
                     <th><label for="article_content">内容</label></th>
@@ -27,6 +41,7 @@
                     <td><button id="submit_article" >发布</button></td>
                 </tr>
             </table>
+            </form>
 		</div>
         
 	</div>

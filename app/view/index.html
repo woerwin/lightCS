@@ -3,23 +3,25 @@
 		<div id="toolbar">
             <button class="btn-left" id="chatchannel_bar">客服</button>
 			<button class="btn-left" id="login_bar">登录</button>
-			<span>首页</span>
+			<span>轻客服</span>
             <button class="btn-right" id="register_bar">注册</button>
             <button class="btn-right" id="logout_bar">退出</button>					
 		</div>
 		
-		<div id="index_list_click" class="channel">
+		<div id="index_list_click" class="channel_index">
 			<ul>
                 
                 {{#each data}}
                 <li title="">
-					<div class="channelName">
+                    <div class="channel_img" style="float: left;"><img title="{{this.title}}" username="{{this.username}}" src="{{#if this.pic}}{{this.pic}}{{else}}/assets/pic/logo.jpg{{/if}}" width="72" height="72" /></div>
+					<div class="channel_title" title="{{this.title}}" username="{{this.username}}">
 						{{this.title}}
                         <button class="indexRemove" {{$Library.getUsername.getDisplay()}}  title="{{this.title}}" data-id="{{this.smr_id}}">删除</button>
                         
-                        <span class="index_article" title="{{this.title}}" username="{{this.username}}" data-id="{{this.smr_id}}" >»</span>
-					</div>	
-					<div class="createTime">{{$Library.getChatTime.getCTime(this.time)}}</div>		
+                        <span class="index_article" title="{{this.title}}" username="{{this.username}}" >»</span>
+					</div>
+                    <div class="channel_desc" title="{{this.title}}" username="{{this.username}}">{{#if this.desc}}{{this.desc}}{{else}}无{{/if}}</div>	
+					<div class="channel_time">{{$Library.getChatTime.getCTime(this.time)}}</div>	
 				</li>
 			    {{/each}}
                  

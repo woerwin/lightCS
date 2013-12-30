@@ -61,10 +61,6 @@ textarea{
     background-color:#eeeeee;
 }
 
-.index_article{float: right;width: 50px;
-height: 30px;line-height: 30px;font-size: 30px;font-weight: bold;
-margin-top: 5px;margin-right: 5px;text-align: center;color: #999999;}
-
 .article_show{padding:10px 10px 0px;}
 .article_show .article_title{line-height: 1.5em;font-size: 1.5em;}
 .article_show .article_time{font-size: 0.8em;color:#666666;}
@@ -78,16 +74,75 @@ margin-top: 5px;margin-right: 5px;text-align: center;color: #999999;}
 
 .indexRemove {
     float: right;
-    width: 70px;
+    width: 60px;
     height: 30px;
     line-height: 30px;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 12px;
+    margin-right: 10px;
     text-align: center;
     color: white;
     border-radius: 3px;
     border: 1px solid #999999;
     background-color: #999999;
+}
+
+.index_article{float: right;width: 50px;
+height: 72px;line-height: 50px;font-size: 30px;font-weight: bold;
+margin-top: 0px;margin-right: 5px;text-align: center;color: #999999;}
+.channel_index {
+    bottom: 0;
+    overflow: auto;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+.channel_index ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.channel_index ul li {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #E1E1E1;
+    border-top: 2px solid #E1E1E1;
+    display: block;
+    font-size: 18px;
+    height: 72px;
+    width: 100%;
+    float:left;
+}
+.channel_img{
+    margin-left: 10px;
+    border: 0px;
+}
+.channel_title {
+    margin-left: 82px;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.channel_desc{
+    margin-left: 82px;
+    font-size:14px;
+    margin-top:3px;
+}
+.channel_time {
+    color: #ADACAC;
+    font-size: 10px;
+    margin-left: 82px;
+    margin-top: 3px;
+}
+.button{
+    background-color: #4C93E7;
+    border: 1px solid #4688D6;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 60px;
 }

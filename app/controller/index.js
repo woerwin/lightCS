@@ -74,7 +74,7 @@ App.index = sumeru.controller.create(function(env, session){
         		var e = e || window.event,
 					target = e.target || e.srcElement;
 				//console.log(target.tagName.toLowerCase() + target.getAttribute('id'));
-				if(target.tagName.toLowerCase() == 'span' && target.hasAttribute('title')){
+				if(target.hasAttribute('username') && target.hasAttribute('title')){
 					var title = target.getAttribute('title');
                     var article_username = target.getAttribute('username');
                     if(article_username){
@@ -84,7 +84,7 @@ App.index = sumeru.controller.create(function(env, session){
                     }
 				}
                 
-                if(target.tagName.toLowerCase() == 'button' && target.hasAttribute('title')){
+                if(target.tagName.toLowerCase() == 'button' && target.hasAttribute('data-id')){
 					var title = target.getAttribute('title');
                     var smr_id = target.getAttribute('data-id');
                     session.articles.destroy({smr_id:smr_id});

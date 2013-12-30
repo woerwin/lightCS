@@ -1,4 +1,5 @@
 sumeru.packages(
-    'sumeru.js'
+    'sumeru.js',
+    'router.js'
 );
  
