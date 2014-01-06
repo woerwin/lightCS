@@ -1,0 +1,69 @@
+<div id="chatChannelMain">
+        <div id="toolbar">
+			<span>获取和修改第三方数据Demo</span>	
+		</div>
+        
+        <div class="channel">
+            <block tpl-id="descBlock">
+            <ul id="cnblogs" style="margin-left: 12px;">
+                <li><strong>描述</strong></li>
+                <li>数据源的url为：{{serverUrl}};</li>
+                <li>左边部分：发get（也可以改成post）请求从数据源获取数据，同时提供了向该服务器发送增，删和改数据的post请求的方法;</li>
+                <li>右边上半部分：使用clouda从数据源跨域取数据;</li>
+                <li>右边下半部分：仅仅是个iframe，src为数据源</li>
+                <li>notice: 由于第三方数据server部署在bae上，且bae做了数据库读写频率限制，所以有时会取不到数据，一般是等十几分钟即可.</li>
+            </ul>
+            </block>
+            
+            <block tpl-id="extBlock">
+            <table class="listContent" rules="rows" frame="hsides" style="margin-left: 12px;">
+                <caption><h3>使用clouda处理第三方数据</h3></caption>
+                <tr style="font-weight: bold;text-align: center;">
+                    <td class="contentName">Name</td>
+                    <td class="contentAge">Age</td>
+                    <td class="contentModifyAge">New Age</td>
+                    <td class="contentDel">Delete</td>
+                </tr>
+                {{#each data}}
+                <tr data-smrid="{{this.smr_id}}" style="text-align: center;">
+                    <td >{{this.name}}</td>
+                    <td>{{this.age}}</td>
+                    <td>
+                        <input type="text" id="newAge" value="0" style="width: 32px;float:left;" />
+                        <button class="mod join" data-smrid="{{this.smr_id}}" style="float: left;">Mod</button>
+                    </td>
+                    <td>
+                    <button class="del join" style="float: none;" data-smrid="{{this.smr_id}}">Del</button>
+                    </td>
+                </tr>
+                {{else}}
+                <tr>
+                    <td>no data</td>
+                </tr>
+                {{/each}}
+            </table>
+            </block>
+            
+            <div style="margin-left: 12px;">
+                <h4 class="subTitle">添加一条数据 </h4>
+                Name:<input type="text" id="studentName"/>
+                Age :<input type="text" id="studentAge" />
+                <button id="addStudent">Add</button>
+            </div>
+            
+            <div id="right" style="margin-left: 12px;">
+                <h3 class="partTitle"> 使用clouda跨域取数据 </h3>
+                <span id="crossDomainGet" class="souceData"></span>
+            </div>
+            
+            <block tpl-id="sourceFrame">
+            <ul id="cnblogs" style="margin-left: 12px;">
+                <li><strong>直接访问第三方数据server</strong> </li>
+                <li><iframe width="100%" id="sourceFrame" src="{{serverUrl}}" frameborder="0"></iframe></li>
+                
+            </ul>
+            </block>
+            
+        </div>
+
+</div>
