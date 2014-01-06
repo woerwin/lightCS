@@ -2,7 +2,7 @@ module.exports = function(fw){
 
 	fw.publish('articleModel', 'pub-getarticle', function(channelName,callback){
 
-		var collection = this;console.log('333:'+channelName);
+		var collection = this;
 				
 		collection.find({'smr_id':channelName}, {sort:[['time',1]]}, function(err, items){
 			callback(items);

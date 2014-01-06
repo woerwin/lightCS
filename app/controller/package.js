@@ -7,6 +7,8 @@ sumeru.packages(
     'chatRoom.js',
     'createChannel.js',
     'act.js',
-    'article.js'
+    'article.js',
+    'news.js',
+    'students.js'
 )
 
