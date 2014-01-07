@@ -28,3 +28,8 @@ lightCS（轻客服）
 	cd myproject
 	
 	sumeru start
+	
+### 补充
+	本版本库为学习参考clouda官方的例子所成~
+	抓取测试：http://lightcs.duapp.com/news
+	ExternalData测试：http://lightcs.duapp.com/student
